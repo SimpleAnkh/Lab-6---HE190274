@@ -1,0 +1,107 @@
+{
+  "accounts": [
+    {
+      "id": "acc_01",
+      "email": "student1@fpt.edu.vn",
+      "password": "123",
+      "fullName": "FullName Student",
+      "role": "Student",
+      "educationLevel": "FPTU - FPT University",
+      "status": "Active"
+    },
+    {
+      "id": "acc_02",
+      "email": "lecturer1@fpt.edu.vn",
+      "password": "123",
+      "fullName": "Ms Loan Do",
+      "role": "Lecturer",
+      "educationLevel": "FPTU - FPT University",
+      "status": "Active"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "sub_01",
+      "code": "PRF192",
+      "name": "Programming Fundamentals",
+      "curriculum": "Software Engineering 2024",
+      "semester": 1,
+      "credits": 3,
+      "preRequisites": [],
+      "description": "Introduction to programming concepts using C language."
+    },
+    {
+      "id": "sub_02",
+      "code": "PRO192",
+      "name": "Object-Oriented Programming",
+      "curriculum": "Software Engineering 2024",
+      "semester": 2,
+      "credits": 3,
+      "preRequisites": [
+        "PRF192"
+      ],
+      "description": "Object-oriented programming concepts using Java."
+    },
+    {
+      "id": "sub_03",
+      "code": "DBI202",
+      "name": "Databases",
+      "curriculum": "Software Engineering 2024",
+      "semester": 2,
+      "credits": 3,
+      "preRequisites": [
+        "PRF192"
+      ],
+      "description": "Relational databases, SQL, and database design principles."
+    },
+    {
+      "id": "sub_04",
+      "code": "FER202",
+      "name": "Front-End Frameworks",
+      "curriculum": "Software Engineering 2024",
+      "semester": 5,
+      "credits": 3,
+      "preRequisites": [
+        "WEB201c"
+      ],
+      "description": "Building modern single-page applications using ReactJS framework."
+    },
+    {
+      "id": "sub_05",
+      "code": "SDN302",
+      "name": "Software Defined Networking",
+      "curriculum": "Software Engineering 2024",
+      "semester": 6,
+      "credits": 3,
+      "preRequisites": [
+        "WED201c; FER202"
+      ],
+      "description": "Advanced networking concepts and software-defined network architectures."
+    },
+    {
+      "id": "sub_06",
+      "code": "MMA301",
+      "name": "Mobile Application Development",
+      "curriculum": "Software Engineering 2024",
+      "semester": 6,
+      "credits": 3,
+      "preRequisites": [
+        "WED201c; FER202"
+      ],
+      "description": "Building cross-platform mobile applications for Android and iOS."
+    },
+    {
+      "id": "sub_07",
+      "code": "WDP301",
+      "name": "Web Design Project",
+      "curriculum": "Software Engineering 2024",
+      "semester": 7,
+      "credits": 3,
+      "preRequisites": [
+        "WEB201c; FER202; SDN302"
+      ],
+      "description": "Practical project applying web design and development principles."
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
